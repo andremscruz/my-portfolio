@@ -1,48 +1,57 @@
 import React, { useState } from "react";
+import Inputs from "./Inputs";
+import "../css/Main.css"
 
 function Main(){
 
-    const[solo, setSolo] = useState(
+    const[conditions, setConditions] = useState(
         {
-            solo: ""
-        })
-    let content
+            solo: "",
+            college: "",
+            deployed: ""
+        })    
 
-    function handleChange(event){
-        const {name, value} = event.target
-        setSolo(prevState => ({
-            ...prevState,
-            [name]: value
-        }))
-
-        if(value === "solo"){
-            content = "solo"
-            console.log(content)
+    function handleChange(event) {
+        const { name, value } = event.target;
+        
+        if (name === "college" && value === "college") {
+            setConditions(prevState => (
+            {
+                ...prevState,
+                college: "college",
+                deployed: "not-deployed"
+            }));
+        } 
+        else if(name === "solo" && value === "group"){
+            setConditions(prevState => (
+            {
+                ...prevState,
+                solo: "group",
+                college: "college",
+                deployed: "not-deployed"
+            }))
         }
-        else if(value === "group"){
-            content = "group"
-            console.log(content)
+        else {
+              setConditions((prevState) => ({
+                ...prevState,
+                [name]: value
+            }));
         }
     }
-    
-    
+
 
     return(
         <main>
-            <div className="main--select">
-                <label htmlFor="select">
-                    Here you can choose to have a look at the Projects I'm most proud of having participated
-                </label>
-                <br/>
-                <select id="select" onChange={handleChange} name="select" value={solo.solo}>
-                    <option value={""}>-- Please choose an option --</option>
-                    <option value={"solo"}>Solo Projects</option>
-                    <option value={"group"}>Group Projects</option>
-                </select>
-            </div>
+            <Inputs conditions={conditions} handleChange={handleChange}/>
             <div className="main--content">
-            {content === "solo" && <h1>solo content</h1>}
-            {content === "group" && <h1>group content</h1>}
+                {conditions.solo === "solo" 
+                && conditions.college === "college" 
+                && conditions.deployed === "not-deployed"
+                && <a href = ""></a>}
+                {conditions.solo === "solo" 
+                && conditions.college === "post-college" 
+                && conditions.deployed === "deployed"
+                && <a href = ""></a>}
             </div>
         </main>        
     )
