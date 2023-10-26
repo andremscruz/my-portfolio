@@ -4,7 +4,8 @@ import "../css/Inputs.css"
 function Inputs(props){
     return(
         <div className="inputs--select">
-                <legend>Here you can choose to have a look at the Projects I'm most proud of having participated on</legend>
+            <legend className = "heading">Please have a look at some of the Projects I'm most proud of having participated on</legend>
+            <div className="inputs--inputs">
                 <input 
                     type="radio"
                     id="solo"
@@ -25,11 +26,9 @@ function Inputs(props){
                     onChange={props.handleChange}
                 />
                 <label htmlFor="group">Group Projects</label>
-
-
-                <br/>
-
-
+            </div>
+                
+            <div className="inputs--inputs">
                 <input 
                     type="radio"
                     id="college"
@@ -51,11 +50,10 @@ function Inputs(props){
                     onChange={props.handleChange}
                 />
                 <label htmlFor="post-college">Post College Projects</label>
+            </div>
 
 
-                <br/>
-
-
+            <div className="inputs--inputs">
                 <input 
                     type="radio"
                     id="deployed"
@@ -70,15 +68,15 @@ function Inputs(props){
 
                 <input 
                     type="radio"
-                    id="non-deployed"
+                    id="not-deployed"
                     name="deployed"
                     value="not-deployed"
                     checked={props.conditions.deployed === "not-deployed"}
                     onChange={props.handleChange}
                 />
                 <label htmlFor="non-deployed">Not Deployed Projects</label>
-                
-            </div>
+            </div>   
+        </div>
     )
 }
 
