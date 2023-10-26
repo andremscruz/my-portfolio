@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Inputs from "./Inputs";
+import gitHub from "../images/gitHub.png"
+import trollFace from "../images/trollFace.png"
+import airbnb from "../images/airbnb.png"
+import portfolio from "../images/portfolio.png"
 import "../css/Main.css"
 
 function Main(){
@@ -53,8 +57,20 @@ function Main(){
                     && conditions.deployed === "not-deployed"
                     &&  <div className="main--links">
                             <legend>As projects from College, we were not authorized to deploy the applications, but you'll find Github links below</legend>
-                            <a href = "https://github.com/andremscruz/MyProfile">My Profile Application</a>
-                            <a href = "https://github.com/andremscruz/BooksApp">Books App Application</a>
+                            <div className="main">
+                                <legend>My Profile Application</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/MyProfile">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
+                            <div className="main">
+                                <legend>Books Application</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/BooksApp">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
                         </div>
                     }
                     {conditions.solo === "solo" 
@@ -62,18 +78,38 @@ function Main(){
                     && conditions.deployed === "deployed"
                     && <div className="main--links">
                             <legend>These are more complex Applications, all programmed using React framework</legend> 
-                            <div className="main--scrimba">
-                                <legend>Find below Github and Website links for my Airbnb Clone</legend>
-                                <a href="https://github.com/andremscruz/airbnb-clone">Github link</a>
-                                <a href="https://luxury-tarsier-eca883.netlify.app/">Airbnb Clone</a>
+                            <div className="main">
+                                <a 
+                                    href="https://luxury-tarsier-eca883.netlify.app/">
+                                        <img className="img" alt="" src={airbnb}/>
+                                </a>
+                                <legend>Airbnb clone</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/airbnb-clone">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
                             </div>
-                            <div className="main--scrimba">
-                                <legend>Find below Github and Website links for my Meme generator</legend>
-                                <a href="https://github.com/andremscruz/meme-generator">Github link</a>
-                                <a href="https://stunning-sorbet-5933c5.netlify.app/">Meme generator</a>
+                            <div className="main">
+                                <a 
+                                    href="https://stunning-sorbet-5933c5.netlify.app/">
+                                        <img className="img" alt="" src={trollFace}/>
+                                </a>
+                                <legend>Meme generator</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/meme-generator">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
                             </div>
-                            <div className="main--scrimba1">
-                                <a href = "https://github.com/andremscruz/my-portfolio">This is the Github link for the Website you're in right now</a>
+                            <div className="main">
+                                <a 
+                                    href="https://inspiring-zuccutto-814952.netlify.app/">
+                                        <img style={{borderRadius: "50%"}} className="img" alt="" src={portfolio}/>
+                                </a>
+                                <legend>My Portfolio(this)</legend>
+                                <a 
+                                    href = "https://github.com/andremscruz/my-portfolio">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
                             </div>   
                             
                         </div>
@@ -82,17 +118,49 @@ function Main(){
                     && conditions.college === "post-college"
                     && conditions.deployed === "not-deployed"
                     && <div className="main--links">
-                            <legend>These are simpler codes that I programmed when I was reviewing JavaScript</legend>
-                            <a href="https://github.com/andremscruz/multiplication-table">Multiplication table</a>
-                            <a href="https://github.com/andremscruz/counter-exercise">Counter exercise</a>
-                            <a href="https://github.com/andremscruz/Numbers-exercise">Numbers exercise</a>
+                        <legend>These are simpler codes that I programmed when I was reviewing JavaScript</legend>
+                            <div className="main">
+                                <legend>Mutiplication table Application</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/multiplication-table">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
+                            <div className="main">
+                                <legend>Counter Application</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/counter-exercise">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
+                            <div className="main">
+                                <legend>Numbers Application</legend>
+                                <a 
+                                    href="https://github.com/andremscruz/Numbers-exercise">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
                         </div>
                     }
                     {conditions.solo === "group" 
                     && <div className="main--links">
                             <legend>As projects from College, we were not authorized to deploy the applications, but you'll find Github links below</legend>
-                            <a href="https://github.com/comp229-group7/group-project">Surveys Application</a>
-                            <a href="https://github.com/COMP231W21-G3/COMP231W21_G3_PHONNECT">Phonnect Social Media</a>
+                            <div className="main">
+                                <legend>Phonnect Social Media</legend>
+                                <br/>
+                                <a 
+                                    href="https://github.com/COMP231W21-G3/COMP231W21_G3_PHONNECT">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
+                            <div className="main">
+                                <legend>SurveyCone Application</legend>
+                                <br/>
+                                <a 
+                                    href="https://github.com/comp229-group7/group-project">
+                                        <img className="img" alt="" src={gitHub}/>
+                                </a>
+                            </div>
                         </div>
                     }
                 </div>
