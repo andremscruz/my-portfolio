@@ -5,13 +5,13 @@ function Project(props){
         <div className="main">
             {props.deployed && 
             <a 
-                href={props.link}>
-                        <img className="img" alt="" src={props.image}/>
+                href={props.project.link}>
+                        <img className="img" alt="" src={`images/${props.project.image}`}/>
             </a>}
-            <legend>{props.name}</legend>
+            <legend>{props.project.name}</legend>
             <a 
-                href={props.gitLink}>
-                    <img className="img" alt="" src={props.gitImage}/>
+                href={props.project.gitLink}>
+                    <img className="img" alt="" src={`images/${props.project.gitImage}`}/>
             </a>
         </div>
     )
