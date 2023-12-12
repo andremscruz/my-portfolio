@@ -1,11 +1,11 @@
-import construction from '../images/construction.png'
+import construction from '../images/construction.gif'
 
 function Contact(props){
     return(
         <div style={{marginLeft: props.sidebarShow ? '16%':'0'}}>
             <h1 className="about--me">Contact</h1>
             <div className='about-c-container'>
-                <h5>UNDER CONSTRUCTION</h5>
+                <h5>IN PROGRESS</h5>
                 <img alt="" src={construction} className='about-c'/>
             </div>
             
