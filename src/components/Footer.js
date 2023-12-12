@@ -1,9 +1,13 @@
 import React from "react"
-import "../css/Footer.css"
 
-function Footer(){
+function Footer(props){
     return(
-        <footer className="footer"> Andre Mariano Sousa Cruz &#169; Copyright 2023 </footer> 
+        <footer 
+            style={{marginLeft: props.sidebarShow ? '16%':'0', width: props.sidebarShow ? '80%': '100%'}} 
+            className="footer"
+        > 
+            Andre Mariano Sousa Cruz &#169; Copyright 2023 
+        </footer> 
     )
 }
 

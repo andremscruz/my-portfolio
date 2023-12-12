@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Inputs from "./Inputs";
 import Project from "./Project";
-import "../css/Main.css"
 import { dataG, dataScn, dataSpd, dataSpn } from "../data"
 
-function Main(){
+function Main(props){
 
     const[conditions, setConditions] = useState(
         {
@@ -44,10 +43,7 @@ function Main(){
 
     return(
         <>
-            <div className="main--welcome--container">
-                <h1 className="main--welcome">Welcome to my Portfolio !</h1>
-            </div>
-            <main className="main--content">
+            <main className="main--content" style={{marginLeft: props.sidebarShow ? '15%':'0'}}>
                 <Inputs conditions={conditions} handleChange={handleChange}/>
                 <div>
                     {conditions.solo === "solo" 
