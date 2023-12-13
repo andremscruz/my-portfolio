@@ -163,7 +163,7 @@ a{
 }
 @media screen and (max-width: 768px) {
     .about--links {
-        height: 115vh;
+        height: 130vh;
     }
 
     .about--img {
