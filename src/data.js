@@ -77,10 +77,10 @@ export const dataG = [
 
 export const pages = [
     {
-      id:1,
-      text: "Home",
-      img: "home.png",
-      whiteimg: "home-white.png"
+        id:1,
+        text: "About",
+        img: "about.png",
+        whiteimg: "about-white.png"
     },
     {
       id:2,
@@ -90,12 +90,6 @@ export const pages = [
     },
     {
       id:3,
-      text: "About",
-      img: "about.png",
-      whiteimg: "about-white.png"
-    },
-    {
-      id:4,
       text: "Contact",
       img: "contact.png",
       whiteimg: "contact-white.png" 

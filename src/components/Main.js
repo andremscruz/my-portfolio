@@ -43,7 +43,7 @@ function Main(props){
 
     return(
         <>
-            <main className="main--content" style={{marginLeft: props.sidebarShow ? '15%':'0'}}>
+            <main className="main--content">
                 <Inputs conditions={conditions} handleChange={handleChange}/>
                 <div>
                     {conditions.solo === "solo" 
@@ -52,7 +52,7 @@ function Main(props){
                     && <div className="main--links"> 
                             <legend>These are more complex Applications, all programmed using React framework</legend> 
                             {dataSpd.map(project => 
-                                <Project project = {project} deployed = {true} /> 
+                                <Project key = {project.name} project = {project} deployed = {true} /> 
                                 )}
                         </div>
                     }
@@ -62,7 +62,7 @@ function Main(props){
                     && <div className="main--links">
                             <legend>These are simpler codes that I programmed when I was reviewing JavaScript</legend>
                             {dataSpn.map(project => 
-                                <Project project = {project} deployed = {false} />
+                                <Project key = {project.name} project = {project} deployed = {false} />
                                 )}
                         </div>
                     }
@@ -72,7 +72,7 @@ function Main(props){
                     &&  <div className="main--links">  
                             <legend>As projects from College, we were not authorized to deploy the applications, but you'll find Github links below</legend>
                             {dataScn.map(project =>
-                                <Project project = {project} deployed = {false} />
+                                <Project key = {project.name} project = {project} deployed = {false} />
                                 )}
                         </div>
                     }
@@ -80,7 +80,7 @@ function Main(props){
                     && <div className="main--links">
                             <legend>As projects from College, we were not authorized to deploy the applications, but you'll find Github links below</legend>
                             {dataG.map(project =>
-                                <Project project = {project} deployed = {false} />
+                                <Project key = {project.name} project = {project} deployed = {false} />
                                 )}
                         </div>
                     }

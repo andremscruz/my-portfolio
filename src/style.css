@@ -6,22 +6,7 @@
     color: white;
 }
 /*Header styles*/
-.header{
-    display: flex;
-    align-items: center;
-    height: 50px;
-    background-color: #21222A;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
-    
-}
-.header--toggle{
-    width: 25px;
-    margin-left: 30px;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    background-color:#21222A;
-}
+
 .header--nav{
     width: 200px;
     position: fixed;
@@ -30,7 +15,7 @@
     background-color: #21222A;
     height: 100%;
     overflow-x: hidden;
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
@@ -57,8 +42,18 @@ li:hover{
     justify-self: center;
     background-color: #282D35;
 }
+@media screen and (max-width: 768px) {
+    .header--nav {
+        width: 15%; /* Adjust width for better responsiveness on smaller screens */
+    }
+
+    .header-text {
+        padding-left: 1.5rem; /* Adjust font size for better readability on smaller screens */
+    }
+}
 /*Main styles styles*/
 .main--content{
+    margin-left: 16%;
     margin-top: 45px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: grid;
@@ -74,7 +69,6 @@ li:hover{
     flex-direction: column;
     margin-top: 60px;
     object-fit: contain;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
     min-height: 270px;
 }
 a{
@@ -97,6 +91,12 @@ a{
     font-size: small;
     margin-top: 50px;
 }
+@media screen and (max-width: 768px) {
+    .main--content {
+        height: 150vh;
+    }
+
+}
 .inputs--select{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -111,7 +111,7 @@ a{
     margin-left: 15px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+
 }
 
 .inputs--inputs label{
@@ -124,32 +124,62 @@ a{
 .inputs--inputs #not-deployed{
     margin-left: 8px;
 }
-/*Home Styles */
-.home--title{
-    margin-top: 25px;
-    text-align: center;
+/*About Styles */
+.about-div{
+    margin-left: 13%;
 }
-.home--links{
+.about-text{
+    font-size: larger;
+    text-align: justify;
+    margin-right: auto;
+    width: 75%;
+    height: 50vh;
+    margin-left: 13%;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+.about-college{
+    text-decoration: none;
+    scale: 1;
+    transition: all 0.5s ease;
+    color: #0078D4;
+}
+.about-college:hover{
+    color: #D2DE38;
+}
+.about--links{
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    height: 80vh;
-    margin: 0;
+    height: 40vh;
 }
-.home--img{
+.about--img{
     scale: 1;
     margin: 30px;
     transition: transform 0.5s ease;
 }
-.home--img:hover{
+.about--img:hover{
     transform: scale(1.4);
 }
-/*About Styles */
-.about--me{
+@media screen and (max-width: 768px) {
+    .about--links {
+        height: 200vh;
+    }
+
+    .about--img {
+        margin: 10; /* Increase margin for better spacing */
+    }
+}
+
+/*Contact styles */
+.contact-div{
+    margin-left: 13%;
+}
+.contact{
     margin-top: 25px;
     text-align: center;
 }
-.about-c-container{
+.contact-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,15 +187,37 @@ a{
     height: 80vh;
     margin: 0;
 }
-.about-c{
-    margin-top: 25px;
+.email-container, .phone-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-/*Contact styles */
+.email-img, .phone-img{
+    scale: 1;
+    margin: 30px;
+}
+.email, .phone{
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+.email:hover, .phone:hover{
+    transform: scale(1.3);
+    color: rgb(0, 89, 255);
+}
 /*Footer styles */
 .footer{
+    width: 73%;
+    margin-left: 20%;
     text-align: center;
     padding-bottom: 15px;
     position: absolute;
-    bottom: 0;
-    
+    bottom: 0;   
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        position: fixed;
+        width: 75%;
+        bottom: 0;
+        font-size: x-small;
+    }
 }
