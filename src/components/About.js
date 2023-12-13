@@ -4,7 +4,7 @@ import github from '../images/gitHub-white.png'
 function About(){
     return(
         <div className='about-div'>
-            <h1 style={{textAlign: 'center', marginTop: '50px'}}>Hello there!</h1>
+            <h1 style={{textAlign: 'center', marginTop: '30px'}}>Hello there!</h1>
             <div className='about-text'>
                     <p style={{textIndent: '25px'}}>
                         My name is Andre Cruz, I'm a 24 year old Developer, graduated in Software Engineering Technician
