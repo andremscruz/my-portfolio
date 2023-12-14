@@ -141,7 +141,7 @@ a{
 .about-college{
     text-decoration: none;
     scale: 1;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     color: #0078D4;
 }
 .about-college:hover{
@@ -152,6 +152,16 @@ a{
     align-items:center;
     justify-content: center;
     height: 25vh;
+}
+.about-label{
+    text-decoration: none;
+    scale: 1;
+    transition: all 0.7s ease;
+    color: #0078D4;
+    cursor: pointer;
+}
+.about-label:hover{
+    color: #D2DE38;
 }
 .about--img{
     scale: 1;

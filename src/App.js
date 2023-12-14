@@ -18,7 +18,7 @@ function App() {
       />
       {
         currentPage === "About" 
-        ? <About/>
+        ? <About setCurrentPage = {setCurrentPage}/>
         : currentPage === "Projects"
           ? <Main/>
           : <Contact/>

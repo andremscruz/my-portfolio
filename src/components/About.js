@@ -1,7 +1,11 @@
 import linkedin from '../images/linkedin.png'
 import github from '../images/gitHub-white.png'
 
-function About(){
+function About(props){
+
+    function handleClick(){
+        props.setCurrentPage("Projects")
+    }
     return(
         <div className='about-div'>
             <h1 style={{textAlign: 'center', marginTop: '30px'}}>Hello there!</h1>
@@ -17,9 +21,10 @@ function About(){
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}>
-                        For now, I have been working as a Freelancer, exclusively with activities of my own. 
-                        However, I'm seeking an opportunity to finally start my development career in a good company.
-                        Please feel free to review my Projects section and look into some of my work.
+                        For now, I have been working as a Freelancer, exclusively with activities of my own. However, 
+                        I'm seeking an opportunity to finally start my development career in a good company. Please 
+                        feel free to review my <label onClick={handleClick} className='about-label'>Projects section </label>
+                        and look into some of my work.
                     </p>
                     <br/>
                     <br/>
@@ -40,13 +45,3 @@ function About(){
 
 export default About
 
-/*
-I'm a 24 year old, motivated to start a career in development. 
-I'm eager to learn and very focused and dedicated about things I'm passionate
-I have a good knowledge in a few programming languages, with JavaScript being my favorite one.
-Recently, I have been studying React and developing a lot with it. I quite enjoy it
-I'm seeking a good opportunity to finally start a career in development. 
-
-
-
-*/ 

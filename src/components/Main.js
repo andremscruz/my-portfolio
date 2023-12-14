@@ -3,7 +3,7 @@ import Inputs from "./Inputs";
 import Project from "./Project";
 import { dataG, dataScn, dataSpd, dataSpn } from "../data"
 
-function Main(props){
+function Main(){
 
     const[conditions, setConditions] = useState(
         {
