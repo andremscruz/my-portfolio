@@ -24,7 +24,7 @@ function App() {
           : <Contact/>
       }
       
-      <Footer sidebarShow/>
+      <Footer />
     </>
     
   )
