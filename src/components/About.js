@@ -6,12 +6,27 @@ function About(props){
     function handleClick(){
         props.setCurrentPage("Projects")
     }
+
+    function calculateAge() {
+        const currentDate = new Date()
+    
+        let age = currentDate.getFullYear() - 1999
+    
+        if (currentDate.getMonth() < 5 || (currentDate.getMonth() === 5 && currentDate.getDate() < 13)) {
+            age--
+        }
+    
+        return age
+    }
+
+    const currentAge = calculateAge()
+
     return(
         <div className='about-div'>
             <h1 style={{textAlign: 'center', marginTop: '30px'}}>Hello there!</h1>
             <div className='about-text'>
                     <p style={{textIndent: '25px'}}>
-                        My name is Andre Cruz, I'm a 24 year old Developer, graduated in Software Engineering Technician
+                        My name is Andre Cruz, I'm a {currentAge} year old Developer, graduated in Software Engineering Technician
                         at <a href='https://www.centennialcollege.ca/' className='about-college' target='_blank' 
                             rel='noopener noreferrer'>Centennial College</a>in 2021. 
                         I'm eager to learn, very focused and dedicated about things I'm passionate, like coding. 
