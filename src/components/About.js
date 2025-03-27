@@ -36,9 +36,13 @@ function About(props){
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}>
-                        For now, I have been working as a Freelancer, mostly with activities of my own. However, 
-                        I'm seeking an opportunity to finally start my development career in a good company. Please 
-                        feel free to review my <label onClick={handleClick} className='about-label'>Projects section </label>
+                        After working as a Freelancer, mostly with activities of my own, I started working on a company as
+                        a Product Implementation specialist on a SaaS company, creating many different pop-ups and forms 
+                        aiming to offer our clients with the best options to user interaction on their website, for desired purposes.
+                    </p>
+                    <br/>
+                    <p style={{textIndent: '25px'}}> 
+                        Please feel free to review my <label onClick={handleClick} className='about-label'>Projects section </label>
                         and look into some of my work.
                     </p>
                     <br/>
