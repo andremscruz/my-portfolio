@@ -83,16 +83,22 @@ export const pages = [
         whiteimg: "about-white.png"
     },
     {
-      id:2,
-      text: "Projects",
-      img:  "projects.png",
-      whiteimg: "projects-white.png"
+        id:2,
+        text: "Resume",
+        img: "resume.png",
+        whiteimg:"resume-white.png"
     },
     {
-      id:3,
-      text: "Contact",
-      img: "contact.png",
-      whiteimg: "contact-white.png" 
+        id:3,
+        text: "Projects",
+        img:  "projects.png",
+        whiteimg: "projects-white.png"
+    },
+    {
+        id:4,
+        text: "Contact",
+        img: "contact.png",
+        whiteimg: "contact-white.png" 
     }
   ]
     

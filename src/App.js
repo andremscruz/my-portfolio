@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Main from "./components/Main"
 import About from "./components/About"
 import Contact from "./components/Contact"
+import Resume from "./components/Resume"
 import Footer from "./components/Footer"
 import "./style.css"
 
@@ -21,6 +22,8 @@ function App() {
         ? <About setCurrentPage = {setCurrentPage}/>
         : currentPage === "Projects"
           ? <Main/>
+          : currentPage === "Resume"
+          ? <Resume/>
           : <Contact/>
       }
       

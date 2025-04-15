@@ -26,19 +26,20 @@ function About(props){
             <h1 style={{textAlign: 'center', marginTop: '30px'}}>Hello there!</h1>
             <div className='about-text'>
                     <p style={{textIndent: '25px'}}>
-                        My name is Andre Cruz, I'm a {currentAge} year old Developer, graduated in Software Engineering Technician
-                        at <a href='https://www.centennialcollege.ca/' className='about-college' target='_blank' 
-                            rel='noopener noreferrer'>Centennial College</a>in 2021. 
-                        I'm eager to learn, very focused and dedicated about things I'm passionate, like coding. 
-                        I like to improve skills I already have, as well as learn new things. I have good knowledge in a 
-                        few programming languages, with JavaScript being my favorite one. Recently, I have been studying, 
-                        developing and having a very good time with React.
+                    I’m Andre Cruz - a {currentAge} year old Developer,who’s all about turning ideas into clean, functional websites. 
+                    I graduated from <a href='https://www.centennialcollege.ca/' className='about-college' target='_blank' 
+                    rel='noopener noreferrer'>Centennial College</a>in 2021 and since then, I’ve been focused on front-end development, 
+                    especially with JavaScript and React - my favorite tech duo.
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}>
-                        After working as a Freelancer, mostly with activities of my own, I started working on a company as
-                        a Product Implementation specialist on a SaaS company, creating many different pop-ups and forms 
-                        aiming to offer our clients with the best options to user interaction on their website, for desired purposes.
+                    I’m a pretty curious person — always learning, tweaking, and trying new things. Whether I’m diving deeper into React or 
+                    experimenting with new design patterns, I love getting better at what I do. 
+                    </p>
+                    <br/>
+                    <p style={{textIndent: '25px'}}>
+                    Right now, I’m on the lookout for a full-time role or freelance projects where I can grow, build cool stuff, and work with awesome people. 
+                    Let’s build something great together!
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}> 

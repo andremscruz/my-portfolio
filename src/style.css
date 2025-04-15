@@ -181,6 +181,54 @@ a{
     }
 }
 
+/*Resume styles*/
+.resume-div{
+    margin: 75px 105px 45px 300px;
+}
+
+.profile-text{
+    font-size: large;
+}
+
+.resume-grid{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-rows: 40px 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.resume-icons{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.resume-expandable{
+    transition: all 0.5s ease;
+    cursor: pointer;
+    fill: #ffffff;
+   
+}
+.resume-expandable:hover{
+    transform: scale(1.3);
+    fill: #007bff;
+}
+
+.resume-h3{
+    margin-bottom: 5px;
+}
+
+.resume-h4{
+    margin-bottom: 10px;
+}
+
+.resume-p{
+    margin-bottom: 10px;
+}
+
+
 /*Contact styles */
 .contact-div{
     margin-left: 13%;
