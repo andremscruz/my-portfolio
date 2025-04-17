@@ -47,8 +47,6 @@ function About(props){
                         and look into some of my work.
                     </p>
                     <br/>
-                    <br/>
-                    <p><strong>Certifications:</strong> Java OOP, MySQL, JavaScript</p>
             </div>
             <div className='about--links'>
                 <a href='https://www.linkedin.com/in/andremscruz/' target='_blank' rel='noopener noreferrer' className='about--img'>

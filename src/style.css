@@ -44,11 +44,14 @@ li:hover{
 }
 @media screen and (max-width: 768px) {
     .header--nav {
-        width: 15%; /* Adjust width for better responsiveness on smaller screens */
+        width: 12%; 
     }
 
     .header-text {
-        padding-left: 1.5rem; /* Adjust font size for better readability on smaller screens */
+        display: none;
+    }
+    li:hover{
+        padding-left: 1rem;
     }
 }
 /*Main styles styles*/
@@ -173,7 +176,7 @@ a{
 }
 @media screen and (max-width: 768px) {
     .about--links {
-        height: 140vh;
+        margin-top: 600px;
     }
 
     .about--img {
@@ -187,7 +190,8 @@ a{
 }
 
 .profile-text{
-    font-size: large;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .resume-grid{
@@ -202,7 +206,7 @@ a{
 .resume-icons{
     font-size: 25px;
     margin-bottom: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .resume-expandable{
@@ -221,11 +225,26 @@ a{
 }
 
 .resume-h4{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: medium;
+    font-weight:lighter;
 }
 
 .resume-p{
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .resume-div{
+        margin: 75px 25px 45px 100px;
+    }
+    .resume-grid{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 15px;
+    }
 }
 
 
