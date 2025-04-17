@@ -23,10 +23,10 @@ function About(props){
 
     return(
         <div className='about-div'>
-            <h1 style={{textAlign: 'center', marginTop: '30px'}}>Hello there!</h1>
+            <h1 style={{textAlign: 'center', marginTop: '50px'}}>Hello there!</h1>
             <div className='about-text'>
                     <p style={{textIndent: '25px'}}>
-                    I’m Andre Cruz - a {currentAge} year old Developer,who’s all about turning ideas into clean, functional websites. 
+                    I’m Andre Cruz - a {currentAge} year old Developer, who’s all about turning ideas into clean, functional websites. 
                     I graduated from <a href='https://www.centennialcollege.ca/' className='about-college' target='_blank' 
                     rel='noopener noreferrer'>Centennial College</a>in 2021 and since then, I’ve been focused on front-end development, 
                     especially with JavaScript and React - my favorite tech duo.
