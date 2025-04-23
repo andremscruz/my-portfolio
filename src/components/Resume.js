@@ -1,11 +1,29 @@
-import React, {useState} from "react"
-import { FaBriefcase, FaGraduationCap, FaTools , FaCertificate } from "react-icons/fa";
-import { RiAccountPinCircleFill } from "react-icons/ri";
+import React, {useState, useEffect} from "react"
+import { FaBriefcase, FaGraduationCap, FaTools , FaCertificate } from "react-icons/fa"
+import { RiAccountPinCircleFill } from "react-icons/ri"
 import Experience from "./Experience"
+import { experiences } from "../data"
 
 
 function Resume(){
     const [isExpanded, setIsExpanded] = useState(false)
+
+    useEffect(() => {
+        // This will be executed when the component mounts
+        const onLoad = () => {
+            console.log("Resume component has loaded");
+            // You can add any other logic you'd like to run on load here
+        };
+
+        // Call the onLoad function
+        onLoad();
+
+        // Optionally, return a cleanup function
+        return () => {
+            console.log("Resume component is being unmounted");
+            // You can add any cleanup logic here if necessary
+        };
+    }, []);
 
     function handleClick(){
         setIsExpanded(prevState => !prevState)
@@ -14,7 +32,7 @@ function Resume(){
     return(
         <div className="resume-div">
             {isExpanded ? ( 
-                <Experience handleClick = {handleClick}/>
+                <Experience handleClick = {handleClick} />
             ) : (
                 <>
                     <div className="resume-profile-text">
@@ -29,32 +47,20 @@ function Resume(){
                         <div className="resume-column1">
                             <div className="profile-experiences">
                                 <FaBriefcase className="resume-icons resume-expandable" onClick={handleClick}/>
-
-                                <h3 className="resume-h3">Junior Product Implementation Specialist</h3> 
-                                <h4 className="resume-h4"><i>Bmetric</i> - Remote from Portugal</h4> 
-                                <span style={{ marginBottom: '25px', fontSize: 'small' }}>
-                                    February 2024 - June 2024
-                                </span>
+                                <div className="profile-experiences-content">
+                                    {experiences.map(exp =>
+                                        <div>
+                                            <h3 className="resume-h3">{exp.position}</h3> 
+                                            <h4 className="resume-h4"><i>{exp.company}</i> - {exp.location}</h4> 
+                                            <span style={{ fontSize: 'small' }}>
+                                                {exp.timeFrame}
+                                            </span>
+                                        </div>
+                                    )}
+                                </div>
+                                
+                                
                             </div>
-                            <div className="profile-skills">
-                                <FaTools className="resume-icons"/>
-
-                                <h3 className="resume-p">Hard Skills:</h3>
-                                <p style={{ marginBottom: '25px' }}>
-                                    Java • JavaScript • C# • HTML • CSS • MySQL • NoSQL
-                                </p>
-
-                                <h3 className="resume-p">Soft Skills:</h3>
-                                <p style={{ marginBottom: '25px' }}>
-                                    Problem Solving • Critical Thinking • Communication • Decision Making • Self-Motivation
-                                </p>
-
-                                <h3 className="resume-p">Languages:</h3>
-                                <p >Portuguese (C2) • English (C1)</p>
-
-                            </div>
-                        </div>
-                        <div className="resume-column2">
                             <div className="profile-education">
                                 <FaGraduationCap className="resume-icons"/>
 
@@ -65,7 +71,26 @@ function Resume(){
                                 </span>
 
                             </div>
+                            
+                        </div>
+                        <div className="resume-column2">
+                            <div className="profile-skills">
+                                <FaTools className="resume-icons"/>
 
+                                <h3 className="resume-p">Hard Skills:</h3>
+                                <p style={{ marginBottom: '15px' }}>
+                                    Java • JavaScript • C# • HTML • CSS • MySQL • NoSQL
+                                </p>
+
+                                <h3 className="resume-p">Soft Skills:</h3>
+                                <p style={{ marginBottom: '15px' }}>
+                                    Problem Solving • Critical Thinking • Communication • Decision Making • Self-Motivation
+                                </p>
+
+                                <h3 className="resume-p">Languages:</h3>
+                                <p >Portuguese (C2) • English (C1)</p>
+
+                            </div>
                             <div className="profile-certifications">
                                 <FaCertificate className="resume-icons"/>
 

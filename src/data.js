@@ -100,7 +100,26 @@ export const pages = [
         img: "contact.png",
         whiteimg: "contact-white.png" 
     }
-  ]
+]
+
+export const experiences = [
+    {
+        position: "Junior Product Implementation Specialist",
+        company: "Bmetric",
+        location: "Remote from Portugal",
+        timeFrame: "February 2024 - June 2024",
+        description: "Bmetric is a remote-first, full-service B2B SaaS provider specializing in offering comprehensive technology, services, and expertise to help businesses establish and optimize their contact strategy, sales efficiency, lead gathering, customer experience, and cross-channel insights.",
+        routine: [
+            "Implemented new user journeys and setup flows on customer websites by developing responsive pop-ups and forms using HTML, CSS, and vanilla JavaScript.",
+            "Edited and optimized existing user journeys and conversion setups to enhance performance and improve user engagement.",
+            "Designed and updated content sections on Bmetric’s website using the custom HTML option in WordPress, applying clean, maintainable HTML and CSS for consistent branding and layout.",
+            "Navigated and worked within the WordPress platform, including content management, theme customization, and plugin configuration.",
+            "Collaborated closely with Account Managers to understand client goals and deliver customized website features that align with their expectations.",
+            "Applied UI/UX best practices to ensure intuitive, visually appealing, and user-friendly interfaces across all customer-facing web elements."
+        ]
+    },
+    
+]
     
 
                         
