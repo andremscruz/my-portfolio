@@ -1,4 +1,5 @@
 import React from "react"
+import { FaGithub } from "react-icons/fa";
 
 function Project(props){
     return(
@@ -9,7 +10,7 @@ function Project(props){
             </a>}
             <legend>{props.project.name}</legend>
             <a href={props.project.gitLink} target='_blank' rel='noopener noreferrer'>
-                <img className="main--img" alt="" src={`images/${props.project.gitImage}`}/>
+                <FaGithub style={{fontSize: '30px'}} className="main--img"/>
             </a>
         </div>
     )

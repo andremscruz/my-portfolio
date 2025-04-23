@@ -1,5 +1,4 @@
-import linkedin from '../images/linkedin.png'
-import github from '../images/gitHub-white.png'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About(props){
 
@@ -50,10 +49,10 @@ function About(props){
             </div>
             <div className='about--links'>
                 <a href='https://www.linkedin.com/in/andremscruz/' target='_blank' rel='noopener noreferrer' className='about--img'>
-                    <img className="img" alt="" src={linkedin}/>
+                    <FaLinkedin style={{fontSize: '40px', cursor: 'pointer'}}/>
                 </a>
                 <a href='https://github.com/andremscruz' target='_blank' rel='noopener noreferrer' className='about--img'>
-                    <img className="img" alt="" src={github}/>
+                    <FaGithub style={{fontSize: '40px', cursor: 'pointer'}}/>
                 </a>
             </div>
         </div>

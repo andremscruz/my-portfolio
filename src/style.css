@@ -80,6 +80,7 @@ a{
     margin-right: 10px;
 }
 .main--img{
+    cursor: pointer;
     max-width: 30px;
     transition: transform 0.5s ease;
 }
