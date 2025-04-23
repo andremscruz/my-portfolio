@@ -28,8 +28,8 @@ function About(props){
                     <p style={{textIndent: '25px'}}>
                     I’m Andre Cruz - a {currentAge} year old Developer, who’s all about turning ideas into clean, functional websites. 
                     I graduated from <a href='https://www.centennialcollege.ca/' className='about-college' target='_blank' 
-                    rel='noopener noreferrer'>Centennial College</a>in 2021 and since then, I’ve been focused on front-end development, 
-                    especially with JavaScript and React - my favorite tech duo.
+                    rel='noopener noreferrer'>Centennial College</a>in 2021 and since then, I’ve been focused on web development,
+                    mostly on front-end development, especially with JavaScript and React - my favorite tech duo.
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}>

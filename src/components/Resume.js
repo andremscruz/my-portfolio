@@ -7,23 +7,13 @@ import { experiences } from "../data"
 
 function Resume(){
     const [isExpanded, setIsExpanded] = useState(false)
+    const [animate, setAnimate] = useState(false);
 
     useEffect(() => {
-        // This will be executed when the component mounts
-        const onLoad = () => {
-            console.log("Resume component has loaded");
-            // You can add any other logic you'd like to run on load here
-        };
-
-        // Call the onLoad function
-        onLoad();
-
-        // Optionally, return a cleanup function
-        return () => {
-            console.log("Resume component is being unmounted");
-            // You can add any cleanup logic here if necessary
-        };
-    }, []);
+        setAnimate(true);
+        const timeout = setTimeout(() => setAnimate(false), 1000); // remove class after animation
+        return () => clearTimeout(timeout);
+      }, []);
 
     function handleClick(){
         setIsExpanded(prevState => !prevState)
@@ -46,7 +36,7 @@ function Resume(){
                     <div className="resume-grid">
                         <div className="resume-column1">
                             <div className="profile-experiences">
-                                <FaBriefcase className="resume-icons resume-expandable" onClick={handleClick}/>
+                                <FaBriefcase className={`${animate ? 'bounce' : ''} resume-icons resume-expandable`} onClick={handleClick} />
                                 <div className="profile-experiences-content">
                                     {experiences.map(exp =>
                                         <div>

@@ -1,12 +1,11 @@
 import React from "react"
-import { FaBriefcase } from "react-icons/fa"
 import { experiences } from "../data"
 
 function Experience({ handleClick }) {
     return (
         <div className="experience-div">
             <div className="experience-topDiv">
-                <FaBriefcase style={{fontSize: '25px'}}/>
+                 
                 <div className='experience-cross' onClick={handleClick}>
                     <div className="BackSlash"></div>
                     <div className="ForwardSlash"></div>
@@ -20,14 +19,14 @@ function Experience({ handleClick }) {
                         <span style={{ fontSize: 'small' }}>
                             {exp.timeFrame}
                         </span>
-                        <p style={{marginTop: '17.5px'}}>{exp.description}</p>
+                        <p style={{marginTop: '17.5px', textAlign: 'justify'}}>{exp.description}</p>
                         <h4 style={{marginTop: '17.5px'}}>Key responsabilities:</h4>
                         <ul>
                             {exp.routine.map(task => (
                                 <li className="experience-tasks" key={task}>{task}</li>
                             ))}
                         </ul>
-                        
+                        <div style={{width: '100%', background: '#21222A', height: '3px'}}></div>
                     </div>
                 )}
             </div>
@@ -49,4 +48,5 @@ export default Experience
 
         ]
     }
+        
  */
