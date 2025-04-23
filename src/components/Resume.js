@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import { FaBriefcase, FaGraduationCap, FaTools , FaCertificate } from "react-icons/fa"
 import { RiAccountPinCircleFill } from "react-icons/ri"
 import Experience from "./Experience"
+import DownloadButton from "./DownloadButton"
 import { experiences } from "../data"
 
 
@@ -26,7 +27,11 @@ function Resume(){
             ) : (
                 <>
                     <div className="resume-profile-text">
-                        <RiAccountPinCircleFill style={{ fontSize: '30px', marginBottom: '15px' }}/>
+                        <div className="resume-text-header">
+                            <RiAccountPinCircleFill style={{ fontSize: '30px', marginBottom: '15px' }}/>
+                            <DownloadButton/>
+                        </div>
+                        
                         <p className="profile-text">
                             I am a highly hardworking and dedicated professional who takes pride in consistently giving my best effort. I am passionate about learning 
                             new things, refining my existing skills, and embracing opportunities for growth. My goal is to contribute meaningfully to a dynamic and 

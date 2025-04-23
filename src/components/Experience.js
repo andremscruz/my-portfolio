@@ -35,18 +35,3 @@ function Experience({ handleClick }) {
 }
 
 export default Experience
-
-
-/*
-{
-        position: "Freelance Web Developer",
-        company: "Freelance",
-        location: "Remote from Portugal",
-        timeFrame: "March 2022 - December 2023",
-        description: "",
-        routine: [
-
-        ]
-    }
-        
- */

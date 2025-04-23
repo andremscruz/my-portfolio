@@ -190,7 +190,15 @@ a{
     margin: 75px 105px 45px 300px;
 }
 
+.resume-text-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .profile-text{
+    text-align: justify;
     font-size: 18px;
     line-height: 1.5;
 }
