@@ -107,7 +107,7 @@ export const experiences = [
         position: "Junior Product Implementation Specialist",
         company: "Bmetric",
         location: "Remote from Portugal",
-        timeFrame: "February 2024 - June 2024",
+        timeFrame: "February 2024 - June 2025",
         description: "Bmetric is a remote-first, full-service B2B SaaS provider specializing in offering comprehensive technology, services, and expertise" + 
         "to help businesses establish and optimize their contact strategy, sales efficiency, lead gathering, customer experience, and cross-channel insights.",
         routine: [
