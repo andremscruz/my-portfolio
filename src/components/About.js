@@ -11,7 +11,7 @@ function About(props){
     
         let age = currentDate.getFullYear() - 1999
     
-        if (currentDate.getMonth() < 5 || (currentDate.getMonth() === 5 && currentDate.getDate() < 13)) {
+        if (currentDate.getMonth() < 4 || (currentDate.getMonth() === 4 && currentDate.getDate() < 13)) {
             age--
         }
     
