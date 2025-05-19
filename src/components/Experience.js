@@ -1,18 +1,17 @@
 import React from "react"
-import { experiences } from "../data"
 
-function Experience({ handleClick }) {
+function Experience(props) {
     return (
         <div className="experience-div">
             <div className="experience-topDiv">
                  
-                <div className='experience-cross' onClick={handleClick}>
+                <div className='experience-cross' onClick={props.handleClick}>
                     <div className="BackSlash"></div>
                     <div className="ForwardSlash"></div>
                 </div>
             </div>
             <div className="profile-experiences-content">
-                {experiences.map(exp =>
+                {props.experience.map(exp =>
                     <div key={exp.position}>
                         <h3 className="resume-h3">{exp.position}</h3> 
                         <h4 className="resume-h4"><i>{exp.company}</i> - {exp.location}</h4> 

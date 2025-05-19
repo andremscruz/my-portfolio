@@ -23,7 +23,7 @@ function Resume(){
     return(
         <div className="resume-div">
             {isExpanded ? ( 
-                <Experience handleClick = {handleClick} />
+                <Experience handleClick = {handleClick} experience = {experiences}/>
             ) : (
                 <>
                     <div className="resume-profile-text">
