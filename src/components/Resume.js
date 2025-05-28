@@ -92,8 +92,10 @@ function Resume(){
                                 <h3 className="resume-p"> Cursos em Vídeo: </h3>
                                 <p className="resume-p">Java Object-Oriented Programming - 2022</p>
                                 <p className="resume-p">MySQL - 2022</p>
-                                <p className="resume-p">JavaScript - 2023</p>
+                                <p className="resume-p" style={{ marginBottom: '15px' }}>JavaScript - 2023</p>
 
+                                <h3 className="resume-p"> LinkedIn Learning: </h3>
+                                <p className="resume-p">React Essential Training - 2025</p>       
                             </div>
                         </div>
                     </div>
