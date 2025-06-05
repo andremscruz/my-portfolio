@@ -24,7 +24,7 @@ export const dataSpd = [
 
     {
         name: "My Portfolio(this)",
-        link: "https://inspiring-zuccutto-814952.netlify.app/",
+        link: "https://andre-portfolio-omega.vercel.app/",
         image: "portfolio.png",
         gitLink: "https://github.com/andremscruz/my-portfolio",
         gitImage: "gitHub-white.png"   
