@@ -28,6 +28,13 @@ export const dataSpd = [
         image: "portfolio.png",
         gitLink: "https://github.com/andremscruz/my-portfolio",
         gitImage: "gitHub-white.png"   
+    },
+    {
+        name: "Bedtime stories",
+        link: "https://flourishing-capybara-7b74f2.netlify.app/",
+        image: "book.png",
+        gitLink: "https://github.com/andremscruz/bedtime_stories",
+        gitImage: "gitHub-white.png"   
     }  
 ]
 
