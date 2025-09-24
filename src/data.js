@@ -15,14 +15,6 @@ export const dataSpd = [
         gitImage: "gitHub-white.png",   
     },
     {
-        name: "Tenzies game",
-        link: "https://illustrious-starburst-0b7773.netlify.app/",
-        image: "dice.png",
-        gitLink: "https://github.com/andremscruz/tenzies-game",
-        gitImage: "gitHub-white.png"
-    },
-
-    {
         name: "My Portfolio(this)",
         link: "https://andre-portfolio-omega.vercel.app/",
         image: "portfolio.png",
@@ -61,11 +53,6 @@ export const dataScn = [
         name: "My Profile Application", 
         gitLink: "https://github.com/andremscruz/MyProfile",
         gitImage: "gitHub-white.png"
-    },
-    {
-        name: "Books Application", 
-        gitLink: "https://github.com/andremscruz/BooksApp",
-        gitImage: "gitHub-white.png"
     }
 ]
 
@@ -73,11 +60,6 @@ export const dataG = [
     {
         name: "Phonnect Social Media", 
         gitLink: "https://github.com/COMP231W21-G3/COMP231W21_G3_PHONNECT",
-        gitImage: "gitHub-white.png"
-    },
-    {
-        name: "SurveyCone Application", 
-        gitLink: "https://github.com/comp229-group7/group-project",
         gitImage: "gitHub-white.png"
     }
 ]
@@ -115,7 +97,7 @@ export const experiences = [
         company: "Bmetric",
         location: "Remote from Portugal",
         timeFrame: "February 2024 - June 2025",
-        description: "Bmetric is a remote-first, full-service B2B SaaS provider specializing in offering comprehensive technology, services, and expertise" + 
+        description: "Bmetric is a remote-first, full-service B2B SaaS provider specializing in offering comprehensive technology, services, and expertise " + 
         "to help businesses establish and optimize their contact strategy, sales efficiency, lead gathering, customer experience, and cross-channel insights.",
         routine: [
             "Implemented new user journeys and setup flows on customer websites by developing responsive pop-ups and forms using HTML, CSS, and vanilla JavaScript.",
@@ -142,6 +124,46 @@ export const experiences = [
             "Utilized Morgan for HTTP request logging and Postman for testing and debugging RESTful API integrations.",
             "Worked with MongoDB and Mongoose to design schemas, manage collections, and perform CRUD operations for dynamic data handling.",
         ]
+    }
+]
+
+export const mainProjects = [
+    {
+        title: "Tenzies Game",
+        description: "A fast-paced dice game built with React. Players roll dice to match all values, racing against the clock."  + 
+        "Includes a leaderboard, with player names, times and rolls saved through an API." +
+        "Created as a way to practice component-based UI, state management, and API integration.",
+        stack: {
+            "frontend": ["React", "JavaScript", "CSS", "HTML"],
+            "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Axios", "Restful API"]
+        }
+    },
+    {
+        title: "Book Log",
+        description: "A full-stack application for logging and managing books. Users can add, edit, and delete book entries." +
+        "Designed to practice CRUD operations while providing a clean, user-friendly interface.",
+        stack: {
+            "frontend": ["JavaScript", "CSS", "HTML"],
+            "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
+        }
+    },
+    {
+        title: "Contact List",
+        description: "A contact manager that allows users to create, update, and remove entries." +
+        "Focused on connecting frontend and backend using REST principles to handle data efficiently.",
+        stack: {
+            "frontend": ["React", "JavaScript", "CSS", "HTML"],
+            "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
+        }
+    },
+    {
+        title: "Covid Survey App",
+        description: "An interactive survey platform where users answered multiple-choice questions related to COVID." + 
+        "At the end, they could see how their answers compared to others, with percentage breakdowns for each question" +
+        "Built to practice form handling, data validation, and dynamic result rendering.",
+        stack: {
+            "frontend": ["JavaScript", "CSS", "HTML"]
+        }
     }
 ]
     

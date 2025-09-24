@@ -3,8 +3,6 @@ import React from "react";
 function Inputs(props){
     return(
         <div className="inputs--select">
-            <legend>Please have a look at some of the Projects I'm most proud of having participated on</legend>
-            <br/>
             <legend>Filter projects from the options below:</legend>
             <div className="inputs--inputs">
                 <input 

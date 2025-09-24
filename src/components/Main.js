@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Inputs from "./Inputs";
 import Project from "./Project";
+import Cards from "./Cards";
 import { dataG, dataScn, dataSpd, dataSpn } from "../data"
 
 function Main(){
@@ -43,6 +44,9 @@ function Main(){
 
     return(
         <>
+            <main>
+                <Cards />
+            </main>
             <main className="main--content">
                 <Inputs conditions={conditions} handleChange={handleChange}/>
                 <div>
@@ -50,7 +54,7 @@ function Main(){
                     && conditions.college === "post-college" 
                     && conditions.deployed === "deployed"
                     && <div className="main--links"> 
-                            <legend>These are more complex Applications, all programmed using React framework</legend> 
+                            <legend>These apps are developed using React</legend> 
                             {dataSpd.map(project => 
                                 <Project key = {project.name} project = {project} deployed = {true} /> 
                                 )}
