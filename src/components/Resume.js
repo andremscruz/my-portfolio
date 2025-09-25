@@ -44,7 +44,7 @@ function Resume(){
                                 <FaBriefcase className={`${animate ? 'bounce' : ''} resume-icons resume-expandable`} onClick={handleClick} />
                                 <div className="profile-experiences-content">
                                     {experiences.map(exp =>
-                                        <div>
+                                        <div key={exp.position}>
                                             <h3 className="resume-h3">{exp.position}</h3> 
                                             <h4 className="resume-h4"><i>{exp.company}</i> - {exp.location}</h4> 
                                             <span style={{ fontSize: 'small' }}>

@@ -6,12 +6,17 @@ import { dataG, dataScn, dataSpd, dataSpn } from "../data"
 
 function Main(){
 
+    const[toggle, setToggle] = useState(true)
     const[conditions, setConditions] = useState(
         {
             solo: "solo",
             college: "post-college",
             deployed: "deployed"
         })
+
+    function toggleFunction(){
+        setToggle(prevState => !prevState)
+    }
 
     function handleChange(event) {
         const { name, value } = event.target;
@@ -44,9 +49,14 @@ function Main(){
 
     return(
         <>
-            <main>
+            <main className="main--cards">
                 <Cards />
             </main>
+
+            <div className='experience-cross' onClick={toggleFunction}>
+                <div className="BackSlash"></div>
+                <div className="ForwardSlash"></div>
+            </div>
             <main className="main--content">
                 <Inputs conditions={conditions} handleChange={handleChange}/>
                 <div>

@@ -130,13 +130,14 @@ export const experiences = [
 export const mainProjects = [
     {
         title: "Tenzies Game",
-        description: "A fast-paced dice game built with React. Players roll dice to match all values, racing against the clock."  + 
-        "Includes a leaderboard, with player names, times and rolls saved through an API." +
+        description: "A fast-paced dice game built with React. Players roll dice to match all values, racing against the clock. "  + 
+        "Includes a leaderboard, with player names, times and rolls saved through an API. " +
         "Created as a way to practice component-based UI, state management, and API integration.",
         stack: {
             "frontend": ["React", "JavaScript", "CSS", "HTML"],
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Axios", "Restful API"]
-        }
+        },
+        icon: "🎲"
     },
     {
         title: "Book Log",
@@ -145,7 +146,8 @@ export const mainProjects = [
         stack: {
             "frontend": ["JavaScript", "CSS", "HTML"],
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
-        }
+        },
+        icon: "📚"
     },
     {
         title: "Contact List",
@@ -154,16 +156,19 @@ export const mainProjects = [
         stack: {
             "frontend": ["React", "JavaScript", "CSS", "HTML"],
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
-        }
+        },
+        icon: "📒"
     },
     {
         title: "Covid Survey App",
-        description: "An interactive survey platform where users answered multiple-choice questions related to COVID." + 
-        "At the end, they could see how their answers compared to others, with percentage breakdowns for each question" +
+        description: "A survey platform where users answered multiple-choice questions related to COVID. "+ 
+        "At the end, they could see how their answers compared to others, with percentage breakdowns. "+
         "Built to practice form handling, data validation, and dynamic result rendering.",
         stack: {
-            "frontend": ["JavaScript", "CSS", "HTML"]
-        }
+            "frontend": ["JavaScript", "CSS", "HTML"],
+            "backend":[]
+        },
+        icon: "📝"
     }
 ]
     
