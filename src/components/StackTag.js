@@ -5,7 +5,11 @@ function StackTag(props){
         <>
             <div className="stack-tags-div">
                 {props.stack.frontend.map(front =>
-                    <span className="front-tags" key={front}>{front}</span>
+                    <span
+                    style={ !props.stack.backend.length ? {marginBottom: "30px"} : {}} 
+                    className="front-tags" key={front}>
+                        {front}
+                    </span>
                 )}
                 {props.stack.backend.map(back =>
                     <span className="back-tags" key={back}>{back}</span>

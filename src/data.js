@@ -141,7 +141,7 @@ export const mainProjects = [
     },
     {
         title: "Book Log",
-        description: "A full-stack application for logging and managing books. Users can add, edit, and delete book entries." +
+        description: "A full-stack application for logging and managing books. Users can add, edit, and delete book entries. " +
         "Designed to practice CRUD operations while providing a clean, user-friendly interface.",
         stack: {
             "frontend": ["JavaScript", "CSS", "HTML"],
@@ -151,7 +151,7 @@ export const mainProjects = [
     },
     {
         title: "Contact List",
-        description: "A contact manager that allows users to create, update, and remove entries." +
+        description: "A contact manager that allows users to create, update, and remove entries. " +
         "Focused on connecting frontend and backend using REST principles to handle data efficiently.",
         stack: {
             "frontend": ["React", "JavaScript", "CSS", "HTML"],

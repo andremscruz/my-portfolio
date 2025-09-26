@@ -4,8 +4,9 @@
     padding: 0;
     background-color: #282D35;
     color: white;
+    max-width: 100%;
 }
-/*Header styles*/
+/*Navbar styles*/
 
 .header--nav{
     width: 200px;
@@ -25,7 +26,7 @@
     align-items: center;
     font-size: 1.5rem;
     text-transform: capitalize;
-    padding: 0.5rem ;
+    padding: 0.5rem;
     color:  white;
     background-color:#282D35;
     transition: all 0.3s linear;
@@ -43,27 +44,19 @@
     justify-self: center;
     background-color: #282D35;
 }
-@media screen and (max-width: 768px) {
-    .header--nav {
-        width: 12%; 
-    }
 
-    .header-text {
-        display: none;
-    }
-    .navOption:hover{
-        padding-left: 1rem;
-    }
-}
-/*Main styles styles*/
+/*Main styles*/
 .main--cards{
-    margin-left: 16%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -60px;
+    margin-left: 200px;
 }
 .main--content{
-    margin-left: 16%;
-    margin-top: 45px;
+    margin-left: 200px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: grid;
+    justify-content: center;
     grid-template-rows: 40px 40px;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -99,12 +92,7 @@ a{
     font-size: small;
     margin-top: 50px;
 }
-@media screen and (max-width: 768px) {
-    .main--content {
-        height: 100vh;
-    }
 
-}
 .inputs--select{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -116,7 +104,6 @@ a{
 .inputs--inputs{
     font-size: small;
     margin-top: 55px;
-    margin-left: 15px;
     display: flex;
     justify-content: space-between;
 
@@ -133,42 +120,71 @@ a{
     margin-left: 8px;
 }
 
-.experience-cross{
-    position: relative;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    left: 50%;
-    top: -25px;
+.expand-projects-div{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.expand-projects {
+  width: 28px;
+  height: 28px;
+  position: relative; 
+  cursor: pointer;
 }
 
-.BackSlash{
-    position: absolute;
-    height: 24px;
-    width: 2px;
-    border: none;
-    background-color: white;
-    transform: rotate(-45deg);
-    transition: transform 0.4s ease;
-    
+.BackSlash-expand,
+.ForwardSlash-expand {
+  position: absolute;
+  left: 48%;            
+  height: 2px;          
+  width: 14px;         
+  background: white;
 }
 
-.ForwardSlash{
-    position: absolute;
-    height: 24px;
-    width: 2px;
-    border: none;
-    background-color: white;
-    transform: rotate(45deg);
-    transition: transform 0.4s ease;
+.BackSlash-expand {
+  top: 50%;
+  transform-origin: 100% 50%;  
+  transform: translateY(-50%) rotate(-45deg);
 }
+
+.ForwardSlash-expand {
+  top: 50%;
+  transform-origin: 100% 50%;   
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.BackSlash-expanded,
+.ForwardSlash-expanded {
+  position: absolute;
+  top: 48%;              
+  width: 14px;           
+  height: 2px;           
+  background: white;
+}
+
+.BackSlash-expanded {
+  right: 50%;                  
+  transform-origin: 100% 50%;   
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.ForwardSlash-expanded {
+  left: 50%;                    
+  transform-origin: 0% 50%;     
+  transform: translateY(-50%) rotate(-45deg);
+}
+
 
 /*Cards styles*/
 .cards-div{
-    margin: 25px 250px 105px 200px;
+    margin: 25px auto 105px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 280px 280px;
     gap: 10px;
 }
 .card-div{
@@ -176,9 +192,13 @@ a{
     background-color: #1E1E1E;
     border-radius: 12px;
     border: 1px solid #363636;
-    padding: 20px;
+    padding: 15px 20px 20px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-div:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 .card-header{
     background-color: #1E1E1E;
@@ -188,20 +208,19 @@ a{
 }
 .card-icon{
     background-color: #1E1E1E;
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 10px;
 }
 .card-title{
     background-color: #1E1E1E;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
 }
 .card-description{
     background-color: #1E1E1E;
-    font-size: 14px;
+    font-size: 13px;
     text-align: justify;
-    margin-bottom: 25px;
-    height: 85px;
+    margin-bottom: 15px;
     overflow:visible;
 }
 .card-button{
@@ -293,15 +312,6 @@ a{
 }
 .about--img:hover{
     transform: scale(1.4);
-}
-@media screen and (max-width: 768px) {
-    .about--links {
-        margin-top: 600px;
-    }
-
-    .about--img {
-        margin: 10; /* Increase margin for better spacing */
-    }
 }
 
 /*Resume styles*/
@@ -432,21 +442,6 @@ a{
     margin: 0 auto;
 }
 
-
-@media screen and (max-width: 768px) {
-    .resume-div{
-        margin: 75px 25px 45px 100px;
-    }
-    .resume-grid{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin-bottom: 15px;
-    }
-}
-
-
 /*Contact styles */
 .contact-div{
     margin-left: 13%;
@@ -483,18 +478,94 @@ a{
 
 /*Footer styles */
 .footer{
-    width: 73%;
-    margin-left: 20%;
+    width: 200px;
     text-align: center;
+    background-color: #21222A;
     padding-bottom: 15px;
     position: fixed;
-    bottom: 0;   
+    bottom: 0;  
 }
+.footer p{
+    text-align: center;
+    margin: 5px;
+    font-size: small;
+    background-color: #21222A;
+}
+
+
+/* Responsive design for mobile devices */
 @media screen and (max-width: 768px) {
+
+    /*Navbar*/
+     .header--nav {
+        width: 68px; 
+    }
+
+    .header-text {
+        display: none;
+    }
+    .navOption:hover{
+        padding-left: 1rem;
+    }
+
+    /*About*/
+    .about--links {
+        margin-top: 600px;
+    }
+
+    .about--img {
+        margin: 10; 
+    }
+
+    /*Resume*/
+    .resume-div{
+        margin: 75px 25px 45px 100px;
+    }
+    .resume-grid{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 15px;
+    }
+
+    /*Main*/
+    .main--content {
+        height: 100vh;
+    }
+    .main--cards{
+        margin-left: 68px;
+    }
+    .expand-projects-div{
+        margin-left: 68px;
+        margin-bottom: 20px;
+    }
+    .main--content{
+        margin-left: 68px;
+    }
+
+    /*Cards*/
+    .cards-div {
+        margin: 20px auto 105px auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /*Footer*/
     .footer {
-        position: fixed;
-        width: 75%;
-        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #282D35;
+        margin-left: 68px;
+        position:relative;
+        width: auto; 
         font-size: x-small;
+    }
+    .footer p {
+        background-color: #282D35;
     }
 }

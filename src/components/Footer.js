@@ -5,8 +5,9 @@ function Footer(){
     let currentYear = new Date().getFullYear()
     
     return(
-        <footer className="footer"> 
-            Andre Mariano Sousa Cruz &#169; Copyright 2023 - {currentYear}
+        <footer className="footer">
+            <p>Andre Mariano Sousa Cruz &#169;</p>
+            <p>Copyright 2023 - {currentYear}</p> 
         </footer> 
     )
 }

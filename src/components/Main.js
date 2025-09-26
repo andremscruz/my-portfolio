@@ -6,7 +6,7 @@ import { dataG, dataScn, dataSpd, dataSpn } from "../data"
 
 function Main(){
 
-    const[toggle, setToggle] = useState(true)
+    const[toggle, setToggle] = useState(false)
     const[conditions, setConditions] = useState(
         {
             solo: "solo",
@@ -52,11 +52,16 @@ function Main(){
             <main className="main--cards">
                 <Cards />
             </main>
-
-            <div className='experience-cross' onClick={toggleFunction}>
-                <div className="BackSlash"></div>
-                <div className="ForwardSlash"></div>
+            <div className="expand-projects-div" onClick={toggleFunction}>
+                <div className='expand-projects'>
+                    <div className={toggle ? "BackSlash-expanded" : "BackSlash-expand"}></div>
+                    <div className={toggle ? "ForwardSlash-expanded"  : "ForwardSlash-expand"}></div>
+                </div>
+                {!toggle && <p className="expand-projects-text">More Projects</p>}
             </div>
+            
+
+            {toggle &&
             <main className="main--content">
                 <Inputs conditions={conditions} handleChange={handleChange}/>
                 <div>
@@ -99,7 +104,9 @@ function Main(){
                         </div>
                     }
                 </div>
-            </main>        
+            </main>
+            }
+                    
         </>
         
     )
