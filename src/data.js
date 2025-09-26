@@ -93,7 +93,7 @@ export const pages = [
 
 export const experiences = [
     {
-        position: "Junior Product Implementation Specialist",
+        position: "Web Developer",
         company: "Bmetric",
         location: "Remote from Portugal",
         timeFrame: "February 2024 - June 2025",
