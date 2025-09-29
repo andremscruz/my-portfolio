@@ -264,6 +264,57 @@ a{
     transform: scale(1.2);
 }
 
+.more-projects-cards{
+    margin: 50px 0px 0px 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 140px 140px;
+    gap: 10px;
+    justify-content: center;
+    
+}
+.other-cards-div{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E1E1E;
+    border-radius: 12px;
+    border: 1px solid #363636;
+    padding: 15px 20px 20px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.other-cards-title{
+    font-size: 16px;
+    background-color: #1E1E1E;
+    justify-self: center;
+}
+.other-cards-image-div{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #1E1E1E;
+}
+.other-cards-logo{
+    background-color: #1E1E1E;
+    max-width: 40px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+.other-cards-git{
+    background-color: #1E1E1E;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+    transition: transform 0.5s ease;
+}
+.other-cards-logo:hover{
+    transform: scale(1.2);
+}
+.other-cards-git:hover{
+    transform: scale(1.2);
+}
+
 
 
 /*About Styles */
@@ -552,6 +603,20 @@ a{
         justify-content: center;
         flex-direction: column;
     }
+    .more-projects-cards{
+        grid-template-columns: 140px 140px;
+        justify-self: center;
+        margin-left: 68px;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .other-cards-title{
+        font-size: 12px;
+    }
+    .other-cards-logo{
+        max-width: 22px;
+    }
+  
 
     /*Footer*/
     .footer {

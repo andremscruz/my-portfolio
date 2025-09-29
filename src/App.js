@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Header from "./components/Header"
-import Main from "./components/Main"
+import Cards from "./components/Cards"
 import About from "./components/About"
 import Contact from "./components/Contact"
 import Resume from "./components/Resume"
@@ -21,7 +21,7 @@ function App() {
         currentPage === "About" 
         ? <About setCurrentPage = {setCurrentPage}/>
         : currentPage === "Projects"
-          ? <Main/>
+          ? <Cards/>
           : currentPage === "Resume"
           ? <Resume/>
           : <Contact/>

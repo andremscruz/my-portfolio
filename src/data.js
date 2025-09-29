@@ -1,69 +1,3 @@
-
-export const dataSpd = [
-    {
-        name: "Airbnb clone",
-        link: "https://luxury-tarsier-eca883.netlify.app/",
-        image: "airbnb.png",
-        gitLink: "https://github.com/andremscruz/airbnb-clone",
-        gitImage: "gitHub-white.png", 
-    },
-    {
-        name: "Meme generator",
-        link: "https://stunning-sorbet-5933c5.netlify.app/",
-        image: "trollFace.png",
-        gitLink: "https://github.com/andremscruz/meme-generator",
-        gitImage: "gitHub-white.png",   
-    },
-    {
-        name: "My Portfolio(this)",
-        link: "https://andre-portfolio-omega.vercel.app/",
-        image: "portfolio.png",
-        gitLink: "https://github.com/andremscruz/my-portfolio",
-        gitImage: "gitHub-white.png"   
-    },
-    {
-        name: "Bedtime stories",
-        link: "https://flourishing-capybara-7b74f2.netlify.app/",
-        image: "book.png",
-        gitLink: "https://github.com/andremscruz/bedtime_stories",
-        gitImage: "gitHub-white.png"   
-    }  
-]
-
-export const dataSpn = [
-    {
-        name: "Multiplication table Application", 
-        gitLink: "https://github.com/andremscruz/multiplication-table",
-        gitImage: "gitHub-white.png"
-    },
-    {
-        name: "Counter Application", 
-        gitLink: "https://github.com/andremscruz/counter-exercise",
-        gitImage: "gitHub-white.png"
-    }, 
-    {
-        name: "Numbers Application", 
-        gitLink: "https://github.com/andremscruz/Numbers-exercise",
-        gitImage: "gitHub-white.png"
-    },   
-]
-
-export const dataScn = [
-    {
-        name: "My Profile Application", 
-        gitLink: "https://github.com/andremscruz/MyProfile",
-        gitImage: "gitHub-white.png"
-    }
-]
-
-export const dataG = [
-    {
-        name: "Phonnect Social Media", 
-        gitLink: "https://github.com/COMP231W21-G3/COMP231W21_G3_PHONNECT",
-        gitImage: "gitHub-white.png"
-    }
-]
-
 export const pages = [
     {
         id:1,
@@ -169,6 +103,35 @@ export const mainProjects = [
             "backend":[]
         },
         icon: "📝"
+    }
+]
+
+export const otherProjects = [
+    {
+        title: "Airbnb clone",
+        link: "https://luxury-tarsier-eca883.netlify.app/",
+        image: "airbnb.png",
+        gitLink: "https://github.com/andremscruz/airbnb-clone",
+        gitImage: "gitHub-white.png", 
+    },
+    {
+        title: "Meme generator",
+        link: "https://stunning-sorbet-5933c5.netlify.app/",
+        image: "trollFace.png",
+        gitLink: "https://github.com/andremscruz/meme-generator",
+        gitImage: "gitHub-white.png",   
+    },
+    {
+        title: "Bedtime stories",
+        link: "https://flourishing-capybara-7b74f2.netlify.app/",
+        image: "book.png",
+        gitLink: "https://github.com/andremscruz/bedtime_stories",
+        gitImage: "gitHub-white.png"   
+    },
+    {
+        title: "Phonnect Social Media", 
+        gitLink: "https://github.com/COMP231W21-G3/COMP231W21_G3_PHONNECT",
+        gitImage: "gitHub-white.png"
     }
 ]
     
