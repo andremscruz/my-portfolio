@@ -1,7 +1,7 @@
 import React from "react";
 import Tag from "./StackTag";
 
-function CardComponent(props){
+function MainCard(props){
     return(
         <>
             <div className="card-div">
@@ -13,7 +13,7 @@ function CardComponent(props){
                     {props.main.description}
                 </p>
                 <Tag stack={props.main.stack}/>
-                <button className="card-button">
+                <button className="card-button" onClick={() => window.alert("⏳ Working on it! You’ll be able to explore more soon.")}>
                     See more
                 </button>
             </div>
@@ -21,4 +21,4 @@ function CardComponent(props){
     )
 }
 
-export default CardComponent
+export default MainCard

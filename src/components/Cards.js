@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import {mainProjects} from "../data"
 import { otherProjects } from "../data";
-import { FaGithub } from "react-icons/fa";
-import CardComponent from "./CardComponent";
+import MainCard from "./MainCard";
+import OtherCard from "./OtherCard";
 
 function Cards() {
     const[toggle, setToggle] = useState(false)
@@ -15,7 +15,7 @@ function Cards() {
             <main className="main--cards">
                 <div className="cards-div">
                     {mainProjects.map(main =>
-                        <CardComponent key={main.title} main={main}/>
+                        <MainCard key={main.title} main={main}/>
                     )}
                 </div>
             </main>
@@ -29,17 +29,7 @@ function Cards() {
             {toggle &&
                 <div className="more-projects-cards">
                     {otherProjects.map(other =>
-                        <div className="other-cards-div" key={other.title}>
-                            <h3 className="other-cards-title">{other.title}</h3>
-                            <div className="other-cards-image-div">
-                                <a href={other.link} target="blank" style={{backgroundColor: '#1e1e1e'}}>
-                                    <img src={`/images/${other.image}`} alt="" className="other-cards-logo"></img>
-                                </a>
-                                <a href={other.gitLink} target="blank" className="other-cards-git"> 
-                                    <FaGithub style={{backgroundColor: '#1e1e1e'}}/> 
-                                </a>
-                            </div>
-                        </div>
+                        <OtherCard key={other.title} other={other}/>
                     )}
                 </div>
             }

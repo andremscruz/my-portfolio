@@ -26,8 +26,8 @@ function App() {
           ? <Resume/>
           : <Contact/>
       }
-      
       <Footer />
+      
     </>
     
   )
