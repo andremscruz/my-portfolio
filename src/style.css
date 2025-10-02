@@ -300,7 +300,6 @@ a{
     background-color: #1E1E1E;
 }
 .other-cards-logo{
- 
     background-color: #1E1E1E;
     max-width: 40px;
     cursor: pointer;
@@ -311,7 +310,6 @@ a{
     background-color: #1E1E1E;
     cursor: pointer;
     font-size: 40px;
-    color: white;
     transition: transform 0.5s ease;
 }
 .other-cards-logo:hover{
@@ -617,12 +615,12 @@ a{
         margin-bottom: 40px;
     }
     .other-cards-title{
-        font-size: 12px;
+        font-size: 9px;
     }
     .other-cards-logo{
         max-width: 22px;
     }
-  
+   
 
     /*Footer*/
     .footer {
