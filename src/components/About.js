@@ -2,10 +2,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function About(props){
 
-    function handleClick(){
-        props.setCurrentPage("Projects")
-    }
-
     function calculateAge() {
         const currentDate = new Date()
     
@@ -28,7 +24,8 @@ function About(props){
                     I’m Andre Cruz - a {currentAge} year old Developer, who’s all about turning ideas into clean, functional websites. 
                     I graduated from <a href='https://www.centennialcollege.ca/' className='about-college' target='_blank' 
                     rel='noopener noreferrer'>Centennial College</a>in 2021 and since then, I’ve been focused on web development,
-                    mostly on front-end development, especially with JavaScript and React - my favorite tech duo.
+                    mostly on front-end development, especially with JavaScript and React - my favorite tech duo. However, I also have some experience 
+                    with back-end technologies like Node.js and Express.
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}>
@@ -42,7 +39,7 @@ function About(props){
                     </p>
                     <br/>
                     <p style={{textIndent: '25px'}}> 
-                        Please feel free to review my <label onClick={handleClick} className='about-label'>Projects section </label>
+                        Please feel free to review my <label onClick={() => {props.changePage('Projects')}} className='about-label'>Projects section </label>
                         and look into some of my work.
                     </p>
                     <br/>

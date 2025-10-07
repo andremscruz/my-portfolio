@@ -11,15 +11,17 @@ import "./style.css"
 function App() {
   const [currentPage, setCurrentPage] = useState("About")
 
+  function handleCurrentPageChange(page){
+        setCurrentPage(page);
+        window.scrollTo(0, 0);
+    }
+
   return(
     <>
-      <Header  
-        setCurrentPage = {setCurrentPage}
-        currentPage = {currentPage}
-      />
+      <Header  changePage = {handleCurrentPageChange}/>
       {
         currentPage === "About" 
-        ? <About setCurrentPage = {setCurrentPage}/>
+        ? <About changePage = {handleCurrentPageChange}/>
         : currentPage === "Projects"
           ? <Cards/>
           : currentPage === "Resume"
