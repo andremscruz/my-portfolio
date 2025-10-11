@@ -12,9 +12,20 @@ function Resume(){
 
     useEffect(() => {
         setAnimate(true);
-        const timeout = setTimeout(() => setAnimate(false), 1000); // remove class after animation
-        return () => clearTimeout(timeout);
-      }, []);
+        
+        const interval = setInterval(() => {
+            setAnimate(true);
+            setTimeout(() => setAnimate(false), 1000); 
+        }, 7000);
+        
+        const initialTimeout = setTimeout(() => setAnimate(false), 1000);
+
+        return () => {
+            clearInterval(interval);
+            clearTimeout(initialTimeout);
+        };
+    }, []);
+
 
     function handleClick(){
         setIsExpanded(prevState => !prevState)
@@ -72,30 +83,35 @@ function Resume(){
                             <div className="profile-skills">
                                 <FaTools className="resume-icons"/>
 
-                                <h3 className="resume-p">Hard Skills:</h3>
+                                <h3 className="resume-h3">Hard Skills:</h3>
                                 <p style={{ marginBottom: '15px' }}>
                                     Java • JavaScript • C# • HTML • CSS • MySQL • NoSQL
                                 </p>
 
-                                <h3 className="resume-p">Soft Skills:</h3>
+                                <h3 className="resume-h3">Soft Skills:</h3>
                                 <p style={{ marginBottom: '15px' }}>
                                     Problem Solving • Critical Thinking • Communication • Decision Making • Self-Motivation
                                 </p>
 
-                                <h3 className="resume-p">Languages:</h3>
-                                <p >Portuguese (C2) • English (C1)</p>
+                                <h3 className="resume-h3">Languages:</h3>
+                                <p >Portuguese (Native) • English (C1) •  Spanish (B1)</p>
 
                             </div>
                             <div className="profile-certifications">
                                 <FaCertificate className="resume-icons"/>
 
-                                <h3 className="resume-p"> Cursos em Vídeo: </h3>
+                                <h3 className="resume-h3"> Cursos em Vídeo: </h3>
                                 <p className="resume-p">Java Object-Oriented Programming - 2022</p>
                                 <p className="resume-p">MySQL - 2022</p>
                                 <p className="resume-p" style={{ marginBottom: '15px' }}>JavaScript - 2023</p>
 
-                                <h3 className="resume-p"> LinkedIn Learning: </h3>
-                                <p className="resume-p">React Essential Training - 2025</p>       
+                                <h3 className="resume-h3"> LinkedIn Learning: </h3>
+                                <p className="resume-p">Building Modern Projects with React - 2025</p>
+                                <p className="resume-p">React Hooks - 2025</p>
+                                <p className="resume-p">React Essential Training - 2025</p>
+                                <p className="resume-p">Building Serverless Applications in AWS - 2025</p>
+                                <p className="resume-p">Building Dynamic Websites using AWS Lambdas - 2025</p>
+                                <p className="resume-p" style={{ paddingBottom: '50px' }}>Python Quick Start - 2025</p>       
                             </div>
                         </div>
                     </div>

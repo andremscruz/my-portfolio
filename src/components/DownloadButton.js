@@ -5,10 +5,20 @@ function DownloadButton (){
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-      setAnimate(true);
-      const timeout = setTimeout(() => setAnimate(false), 1000); // remove class after animation
-      return () => clearTimeout(timeout);
-    }, []);
+    setAnimate(true);
+    
+    const interval = setInterval(() => {
+        setAnimate(true);
+        setTimeout(() => setAnimate(false), 1000); 
+    }, 7000);
+    
+    const initialTimeout = setTimeout(() => setAnimate(false), 1000);
+
+    return () => {
+        clearInterval(interval);
+        clearTimeout(initialTimeout);
+    };
+  }, []);
 
   return (
     <a href="/AndreCruzResume.pdf" download title="Download resume">
