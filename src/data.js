@@ -71,7 +71,20 @@ export const mainProjects = [
             "frontend": ["React", "JavaScript", "CSS", "HTML"],
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Axios", "Restful API"]
         },
-        icon: "🎲"
+        icon: "🎲",
+        context:"Personal React project developed to practice game logic, state management, and backend integration.",
+        challange:"Build an interactive game where the user rolls dice until all show the same number. Beyond the core mechanic, "  +
+        "I wanted to add a ranking system to record best performances, which required saving player data (name, time, and number of rolls) " + 
+        "to a persistent database.",
+        solution: [
+            "Structured the application in React components, using useState and useEffect to manage dice state and victory logic.",
+            "Implemented a “hold” feature so players can lock specific dice.",
+            "Added visual feedback to distinguish between active and inactive dice.",
+            "Created a ranking with two metrics (lowest time and fewest rolls), prompting the player for a name before starting the game.",
+            "Connected the app to an API/backend to store and fetch leaderboard records, simulating a global ranking system." 
+        ],
+        result: "A functional app combining simple game mechanics with persistent data. The project demonstrates state management in React, " +
+        "game logic built with hooks, frontend-backend integration via API, and clear UX with visual feedback and competitive ranking."
     },
     {
         title: "Book Log",
@@ -81,7 +94,16 @@ export const mainProjects = [
             "frontend": ["JavaScript", "CSS", "HTML"],
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
         },
-        icon: "📚"
+        icon: "📚",
+        context:"Solo college project focused on a complete CRUD for books, with basic authentication and permission control.",
+        challange:"Allow users to create, edit, and delete books, ensuring only the author of each entry could modify or remove their own records.",
+        solution:[
+            "Developed RESTful routes with Node.js and Express to handle CRUD operations.",
+            "Set up MongoDB with Mongoose to define schemas and manage book data for persistent data storage.",
+            "Built a custom frontend using vanilla JavaScript for form handling and dynamic updates.",
+            "Implemented simple authentication to differentiate users and enforce permissions.",
+        ],
+        result:"A complete application demonstrating hands-on experience with fullstack CRUD, user authentication and permissions."
     },
     {
         title: "Contact List",
@@ -91,18 +113,41 @@ export const mainProjects = [
             "frontend": ["React", "JavaScript", "CSS", "HTML"],
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
         },
-        icon: "📒"
+        icon: "📒",
+        context:"Web app built with React as a practical CRUD (Create, Read, Update, Delete) exercise, connecting frontend and backend.",
+        challange:"Create a simple contact management system (name and phone number), " +  
+        "with real-time editing and deletion, while keeping the UI intuitive and user-friendly.",
+        solution:[
+            "Structured React components for handling forms, listing, and editing contacts.",
+            "Used Axios to connect the frontend to the API for data operations.",
+            "Implemented visual feedback for adding, updating, and deleting contacts.",
+            "Designed a responsive layout for both desktop and mobile devices."
+        ],
+        result:"A functional app showcasing full CRUD capabilities and fullstack integration. " + 
+        "It strengthened skills in React Router, state management, and REST API handling, as well as code organization and best practices."
     },
     {
         title: "Covid Survey App",
-        description: "A survey platform where users answered multiple-choice questions related to COVID. "+ 
-        "At the end, they could see how their answers compared to others, with percentage breakdowns. "+
+        description: "A survey platform where users answered multiple-choice questions related to COVID. " + 
+        "At the end, they could see how their answers compared to others, with percentage breakdowns. " +
         "Built to practice form handling, data validation, and dynamic result rendering.",
         stack: {
             "frontend": ["JavaScript", "CSS", "HTML"],
             "backend":[]
         },
-        icon: "📝"
+        icon: "📝",
+        context:"College project done in group to practice basic CRUD operations with posts.",
+        challange:"Build a simple application where users could create, edit, and delete posts related to COVID research.",
+        solution:[
+            "Built the backend with Node.js, Express, and MongoDB to store user responses.", 
+            "Created a lightweight frontend with vanilla JavaScript for form rendering and dynamic updates.",
+            "Implemented logic to calculate and display aggregate results in real time after each submission.",
+            "Focused on simple, responsive UI with clear feedback.",
+            "Collaborated using version control and task division to meet deadlines."
+        ],
+        result:"An engaging web app that demonstrates CRUD fundamentals, backend data handling, " + 
+        "dynamic frontend updates without frameworks and fullstack interaction between client and server." +  
+        "It also highlighted teamwork, version control, and web development best practices."
     }
 ]
 
