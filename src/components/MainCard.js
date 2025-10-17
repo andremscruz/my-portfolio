@@ -13,7 +13,11 @@ function MainCard(props){
                     {props.main.description}
                 </p>
                 <Tag stack={props.main.stack}/>
-                <button className="card-button" onClick={() => window.alert("⏳ Working on it! You’ll be able to explore more soon.")}>
+                <button className="card-button" 
+                onClick={() => props.handleClick(
+                    props.main.icon, props.main.title, props.main.stack, 
+                    props.main.context, props.main.challenge, props.main.solution, 
+                    props.main.result)}>
                     See more
                 </button>
             </div>

@@ -73,12 +73,11 @@ export const mainProjects = [
         },
         icon: "🎲",
         context:"Personal React project developed to practice game logic, state management, and backend integration.",
-        challange:"Build an interactive game where the user rolls dice until all show the same number. Beyond the core mechanic, "  +
-        "I wanted to add a ranking system to record best performances, which required saving player data (name, time, and number of rolls) " + 
+        challenge:"Build an interactive game where the user rolls dice until all show the same number. "  +
+        "I added a ranking system to record best performances, which required saving player data (name, time, and number of rolls) " + 
         "to a persistent database.",
         solution: [
             "Structured the application in React components, using useState and useEffect to manage dice state and victory logic.",
-            "Implemented a “hold” feature so players can lock specific dice.",
             "Added visual feedback to distinguish between active and inactive dice.",
             "Created a ranking with two metrics (lowest time and fewest rolls), prompting the player for a name before starting the game.",
             "Connected the app to an API/backend to store and fetch leaderboard records, simulating a global ranking system." 
@@ -96,7 +95,7 @@ export const mainProjects = [
         },
         icon: "📚",
         context:"Solo college project focused on a complete CRUD for books, with basic authentication and permission control.",
-        challange:"Allow users to create, edit, and delete books, ensuring only the author of each entry could modify or remove their own records.",
+        challenge:"Allow users to create, edit, and delete books, ensuring only the author of each entry could modify or remove their own records.",
         solution:[
             "Developed RESTful routes with Node.js and Express to handle CRUD operations.",
             "Set up MongoDB with Mongoose to define schemas and manage book data for persistent data storage.",
@@ -115,7 +114,7 @@ export const mainProjects = [
         },
         icon: "📒",
         context:"Web app built with React as a practical CRUD (Create, Read, Update, Delete) exercise, connecting frontend and backend.",
-        challange:"Create a simple contact management system (name and phone number), " +  
+        challenge:"Create a simple contact management system (name and phone number), " +  
         "with real-time editing and deletion, while keeping the UI intuitive and user-friendly.",
         solution:[
             "Structured React components for handling forms, listing, and editing contacts.",
@@ -137,7 +136,7 @@ export const mainProjects = [
         },
         icon: "📝",
         context:"College project done in group to practice basic CRUD operations with posts.",
-        challange:"Build a simple application where users could create, edit, and delete posts related to COVID research.",
+        challenge:"Build a simple application where users could create, edit, and delete posts related to COVID research.",
         solution:[
             "Built the backend with Node.js, Express, and MongoDB to store user responses.", 
             "Created a lightweight frontend with vanilla JavaScript for form rendering and dynamic updates.",

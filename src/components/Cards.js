@@ -9,20 +9,29 @@ function Cards() {
     const [toggle, setToggle] = useState(false)
     const [showDescription, setShowDescription] = useState(false)
     const [description, setDescription] = useState({
-        title: "",
-        description: "",
         icon: "",
-        img: "",
-        live: "",
-        repo: ""
+        title: "",
+        stack:{frontend: [], backend: []},
+        context: "",
+        challenge: "",
+        solution: "",
+        result: ""
     })
 
     function toggleFunction(){
         setToggle(prevState => !prevState)
     }
-    function showDesc(card){
+    function showDesc(cardIcon, cardTitle, cardStack, cardContext, cardChallenge, cardSolution, cardResult){
         setShowDescription(prevState => !prevState)
-        setDescription(card)
+        setDescription({
+            icon: cardIcon,
+            title: cardTitle,
+            stack: cardStack,
+            context: cardContext,
+            challenge: cardChallenge,
+            solution: cardSolution,
+            result: cardResult
+        })
     }
 
     return(
@@ -54,7 +63,7 @@ function Cards() {
             }
             </>
             :
-            <Description description={description} />
+            <Description description={description} handleClick={showDesc}/>
             }
             
         </>

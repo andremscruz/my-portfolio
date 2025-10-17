@@ -16,7 +16,7 @@ function Resume(){
         const interval = setInterval(() => {
             setAnimate(true);
             setTimeout(() => setAnimate(false), 1000); 
-        }, 7000);
+        }, 5000);
         
         const initialTimeout = setTimeout(() => setAnimate(false), 1000);
 
