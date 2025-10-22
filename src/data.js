@@ -95,7 +95,7 @@ export const mainProjects = [
         "Built to practice form handling, authentication, data validation, and dynamic result rendering.",
         stack: {
             "frontend": ["JavaScript", "CSS", "HTML"],
-            "backend":[]
+            "backend":["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
         },
         icon: "📝",
         context:"College project done in group to practice basic CRUD operations along with authentication and permissions.",
