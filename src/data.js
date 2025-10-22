@@ -146,9 +146,8 @@ export const mainProjects = [
         challenge:"Build a simple application where users could create, edit, and delete posts related to COVID research.",
         solution:[
             "Built the backend with Node.js, Express, and MongoDB to store user responses.", 
-            "Created a lightweight frontend with vanilla JavaScript for form rendering and dynamic updates.",
             "Implemented logic to calculate and display aggregate results in real time after each submission.",
-            "Focused on simple, responsive UI with clear feedback.",
+            "Focused on simple, lightweight, responsive UI with clear feedback and dynamic updates",
             "Collaborated using version control and task division to meet deadlines."
         ],
         result:"An engaging web app that demonstrates CRUD fundamentals, backend data handling, " + 
