@@ -508,8 +508,34 @@
     color: #64B5F6;
     border-left: 3px solid currentColor;
     padding-left: 8px;
-    
 }
+.description-links-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10px;
+    background-color: #1E1E1E;
+    border-top: #64B5F6 3px solid;
+    padding-top: 38px;
+}
+.description-links-container a{
+    background-color: #1E1E1E;
+    text-decoration: none;
+    font-size: 35px;
+    transition: transform 0.5s ease;
+    margin-top: -12px;
+}
+.description-links-container a:hover{
+    transform: scale(1.3);
+}
+.description-github-icon{
+    font-size: 40px;
+    color: white;
+    background-color: #1E1E1E;
+}  
+
 
 /*Contact styles */
 .contact-div{

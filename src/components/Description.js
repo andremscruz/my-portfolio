@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "./StackTag";
+import { FaGithub } from "react-icons/fa";
 
 function Description(props){
     return(
@@ -7,9 +8,9 @@ function Description(props){
             <div className="description-main-container">
                 <div className="description-div">
                     <div className='description-cross' onClick={props.handleClick}>
-                    <div className="BackSlash"></div>
-                    <div className="ForwardSlash"></div>
-                </div>
+                        <div className="BackSlash"></div>
+                        <div className="ForwardSlash"></div>
+                    </div>
                     <div className="description-header">
                         <p className="description-icon">{props.description.icon}</p>
                         <h1 className="description-title">{props.description.title}</h1>
@@ -33,6 +34,13 @@ function Description(props){
                     <p className="description-result">
                         {props.description.result}
                     </p>
+                    <div className="description-links-container">
+                        <a href={props.description.link} target="blank" style={{marginTop: '-25px'}}>
+                            {props.description.icon}</a>
+                        <a href={props.description.gitLink} target="blank">
+                            <FaGithub className="description-github-icon"/>
+                        </a>
+                    </div>               
                 </div>
             </div>
             

@@ -17,7 +17,7 @@ function MainCard(props){
                 onClick={() => props.handleClick(
                     props.main.icon, props.main.title, props.main.stack, 
                     props.main.context, props.main.challenge, props.main.solution, 
-                    props.main.result)}>
+                    props.main.result, props.main.link, props.main.gitLink)}>
                     See more
                 </button>
             </div>

@@ -15,13 +15,15 @@ function Cards() {
         context: "",
         challenge: "",
         solution: "",
-        result: ""
+        result: "",
+        link: "",
+        gitLink: "",
     })
 
     function toggleFunction(){
         setToggle(prevState => !prevState)
     }
-    function showDesc(cardIcon, cardTitle, cardStack, cardContext, cardChallenge, cardSolution, cardResult){
+    function showDesc(cardIcon, cardTitle, cardStack, cardContext, cardChallenge, cardSolution, cardResult, cardLink, cardGitLink){
         setShowDescription(prevState => !prevState)
         setDescription({
             icon: cardIcon,
@@ -30,7 +32,9 @@ function Cards() {
             context: cardContext,
             challenge: cardChallenge,
             solution: cardSolution,
-            result: cardResult
+            result: cardResult,
+            link: cardLink,
+            gitLink: cardGitLink,
         })
     }
 

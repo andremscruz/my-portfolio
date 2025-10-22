@@ -82,8 +82,11 @@ export const mainProjects = [
             "Created a ranking with two metrics (lowest time and fewest rolls), prompting the player for a name before starting the game.",
             "Connected the app to an API/backend to store and fetch leaderboard records, simulating a global ranking system." 
         ],
-        result: "A functional app combining simple game mechanics with persistent data. The project demonstrates state management in React, " +
-        "game logic built with hooks, frontend-backend integration via API, and clear UX with visual feedback and competitive ranking."
+        result: "A functional React app featuring simple game mechanics, persistent data, hook-based game logic, " +
+        "API-driven frontend-backend integration, clear UX with visual feedback, and competitive ranking.",
+        link: "https://illustrious-starburst-0b7773.netlify.app/",
+        gitLink: "https://github.com/andremscruz/tenzies-game",
+
     },
     {
         title: "Book Log",
@@ -102,7 +105,9 @@ export const mainProjects = [
             "Built a custom frontend using vanilla JavaScript for form handling and dynamic updates.",
             "Implemented simple authentication to differentiate users and enforce permissions.",
         ],
-        result:"A complete application demonstrating hands-on experience with fullstack CRUD, user authentication and permissions."
+        result:"A complete application demonstrating hands-on experience with fullstack CRUD, user authentication and permissions.",
+        link: "https://book-log-cfzu.onrender.com/",
+        gitLink: "https://github.com/andremscruz/BooksApp",
     },
     {
         title: "Contact List",
@@ -123,7 +128,9 @@ export const mainProjects = [
             "Designed a responsive layout for both desktop and mobile devices."
         ],
         result:"A functional app showcasing full CRUD capabilities and fullstack integration. " + 
-        "It strengthened skills in React Router, state management, and REST API handling, as well as code organization and best practices."
+        "It strengthened skills in React Router, state management, and REST API handling, as well as code organization and best practices.",
+        link: "https://phonebook-frontend-alpha.vercel.app/",
+        gitLink: "https://github.com/andremscruz/phonebook-frontend",
     },
     {
         title: "Covid Survey App",
@@ -146,7 +153,9 @@ export const mainProjects = [
         ],
         result:"An engaging web app that demonstrates CRUD fundamentals, backend data handling, " + 
         "dynamic frontend updates without frameworks and fullstack interaction between client and server." +  
-        "It also highlighted teamwork, version control, and web development best practices."
+        "It also highlighted teamwork, version control, and web development best practices.",
+        link: "https://surveycone.onrender.com/",
+        gitLink: "https://github.com/comp229-group7/group-project",
     }
 ]
 
@@ -156,26 +165,22 @@ export const otherProjects = [
         link: "https://luxury-tarsier-eca883.netlify.app/",
         image: "airbnb.png",
         gitLink: "https://github.com/andremscruz/airbnb-clone",
-        gitImage: "gitHub-white.png", 
     },
     {
         title: "Meme generator",
         link: "https://stunning-sorbet-5933c5.netlify.app/",
         image: "trollFace.png",
         gitLink: "https://github.com/andremscruz/meme-generator",
-        gitImage: "gitHub-white.png",   
     },
     {
         title: "Bedtime stories",
         link: "https://flourishing-capybara-7b74f2.netlify.app/",
         image: "book.png",
         gitLink: "https://github.com/andremscruz/bedtime_stories",
-        gitImage: "gitHub-white.png"   
     },
     {
         title: "Phonnect Social Media", 
         gitLink: "https://github.com/COMP231W21-G3/COMP231W21_G3_PHONNECT",
-        gitImage: "gitHub-white.png"
     }
 ]
     
