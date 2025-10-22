@@ -89,6 +89,31 @@ export const mainProjects = [
 
     },
     {
+        title: "Covid Survey App",
+        description: "A survey platform where users answered multiple-choice questions related to COVID. " + 
+        "At the end, they could see how their answers compared to others, with percentage breakdowns, " + 
+        "Built to practice form handling, authentication, data validation, and dynamic result rendering.",
+        stack: {
+            "frontend": ["JavaScript", "CSS", "HTML"],
+            "backend":[]
+        },
+        icon: "📝",
+        context:"College project done in group to practice basic CRUD operations along with authentication and permissions.",
+        challenge:"Develop a simple application that allows users to post, edit, and delete research-related " + 
+        "content about COVID, while ensuring that each user could only modify their own posts.",
+        solution:[
+            "Created a backend with Express and MongoDB for handling posts and users.", 
+            "Built logic to calculate and display aggregate results in real time after each submission.",
+            "Implemented authentication and authorization to control user access.",
+            "Collaborated using version control and task division to meet deadlines."
+        ],
+        result:"An engaging web app that demonstrates CRUD fundamentals with authentication and role-based access, backend data handling, " + 
+        "dynamic frontend updates without frameworks and fullstack interaction between client and server. " +  
+        "It also highlighted teamwork, version control, and web development best practices.",
+        link: "https://surveycone.onrender.com/",
+        gitLink: "https://github.com/comp229-group7/group-project",
+    },
+    {
         title: "Book Log",
         description: "A full-stack application for logging and managing books. Users can add, edit, and delete book entries. " +
         "Designed to practice CRUD operations while providing a clean, user-friendly interface.",
@@ -97,15 +122,17 @@ export const mainProjects = [
             "backend": ["Node.js", "Express", "MongoDB", "Mongoose", "Restful API"]
         },
         icon: "📚",
-        context:"Solo college project focused on a complete CRUD for books, with basic authentication and permission control.",
-        challenge:"Allow users to create, edit, and delete books, ensuring only the author of each entry could modify or remove their own records.",
+        context:"A solo project developed in college focused on implementing a complete CRUD system " + 
+        "for managing books using Node.js, Express, and MongoDB, using vanilla JavaScript for the frontend.",
+        challenge:"Build a simple, functional system where users could create, edit, and delete book records, " + 
+        "ensuring clean code organization and a usable interface even with a vanilla frontend.",
         solution:[
-            "Developed RESTful routes with Node.js and Express to handle CRUD operations.",
+            "Designed a RESTful backend using Node.js and Express.",
             "Set up MongoDB with Mongoose to define schemas and manage book data for persistent data storage.",
             "Built a custom frontend using vanilla JavaScript for form handling and dynamic updates.",
-            "Implemented simple authentication to differentiate users and enforce permissions.",
+            "Focused on usability and a smooth flow for managing posts."
         ],
-        result:"A complete application demonstrating hands-on experience with fullstack CRUD, user authentication and permissions.",
+        result:"A complete fullstack CRUD project showcasing backend and database integration, while mantaining clean code structure. ",
         link: "https://book-log-cfzu.onrender.com/",
         gitLink: "https://github.com/andremscruz/BooksApp",
     },
@@ -132,30 +159,7 @@ export const mainProjects = [
         link: "https://phonebook-frontend-alpha.vercel.app/",
         gitLink: "https://github.com/andremscruz/phonebook-frontend",
     },
-    {
-        title: "Covid Survey App",
-        description: "A survey platform where users answered multiple-choice questions related to COVID. " + 
-        "At the end, they could see how their answers compared to others, with percentage breakdowns. " +
-        "Built to practice form handling, data validation, and dynamic result rendering.",
-        stack: {
-            "frontend": ["JavaScript", "CSS", "HTML"],
-            "backend":[]
-        },
-        icon: "📝",
-        context:"College project done in group to practice basic CRUD operations with posts.",
-        challenge:"Build a simple application where users could create, edit, and delete posts related to COVID research.",
-        solution:[
-            "Built the backend with Node.js, Express, and MongoDB to store user responses.", 
-            "Implemented logic to calculate and display aggregate results in real time after each submission.",
-            "Focused on simple, lightweight, responsive UI with clear feedback and dynamic updates",
-            "Collaborated using version control and task division to meet deadlines."
-        ],
-        result:"An engaging web app that demonstrates CRUD fundamentals, backend data handling, " + 
-        "dynamic frontend updates without frameworks and fullstack interaction between client and server." +  
-        "It also highlighted teamwork, version control, and web development best practices.",
-        link: "https://surveycone.onrender.com/",
-        gitLink: "https://github.com/comp229-group7/group-project",
-    }
+    
 ]
 
 export const otherProjects = [
