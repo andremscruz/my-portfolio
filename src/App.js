@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Header from "./components/Header"
+import Sidebar from "./components/Sidebar"
 import Cards from "./components/Cards"
 import About from "./components/About"
 import Contact from "./components/Contact"
@@ -18,7 +18,7 @@ function App() {
 
   return(
     <>
-      <Header  changePage = {handleCurrentPageChange}/>
+      <Sidebar  changePage = {handleCurrentPageChange}/>
       {
         currentPage === "About" 
         ? <About changePage = {handleCurrentPageChange}/>

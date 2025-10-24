@@ -1,13 +1,11 @@
 import React from "react"
 import {pages} from '../data'
 
-function Header(props){
-
-
+function Sidebar(props){
 
     return(
-        <header>
-            <nav >
+        <aside>
+            <nav>
                 <ul className="header--nav">
                     {pages.map(page => 
                         <li className="navOption" key={page.id} onClick={() => {props.changePage(page.text)}}>
@@ -17,9 +15,11 @@ function Header(props){
                     )}
                 </ul>
             </nav>
-        </header>
+        </aside>
+            
+    
         
     )
 }
 
-export default Header
+export default Sidebar

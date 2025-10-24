@@ -434,6 +434,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin-left: 200px;
     background-color: #282D35;
 }
@@ -653,6 +654,22 @@
     }
     .other-cards-logo{
         max-width: 22px;
+    }
+
+    /*Description */
+    .description-main-container{
+        margin-left: 68px;
+        height: auto;
+        padding-top: 35px;
+    }
+    .description-div{
+        width: 90%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.486);
+    }
+    .description-cross{
+        background-color: transparent;
+        position: sticky;
+        top: 70px;
     }
    
     /*Footer*/
